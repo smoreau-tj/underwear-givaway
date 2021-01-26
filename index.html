@@ -17,7 +17,6 @@
     .input-wrapper{
       display: flex;
       flex-direction: column;
-      padding: 5px;
       width: 100%;
     }
     .radio-wrapper{
@@ -25,9 +24,6 @@
       width: 100%;
       justify-content: space-around;
       margin: 10px 0px;
-    }
-    .form-submit{
-      padding: 30px;
     }
     .input-submit{
       height: 50px;
@@ -55,10 +51,16 @@
     .radio-input-wrapper{
       font-size: 14px;
     }
+    .form-submit{
+      padding: 10px;
+    }
 
     @media (min-width: 480px) {
       .form{
         font-size: 18px;
+      }
+      .form-submit{
+        padding: 30px;
       }
     }
   </style>
@@ -69,14 +71,14 @@
         <label class="field-question">Email Address</label>
         <input required name="email" id="email" type="email"> 
       </div>
-      <div class="input-wrapper">
-        <label for="first_name" class="field-question">First Name</label>
-        <input required type="text" id="first_name" name="first_name"> 
-      </div>
-      <div class="input-wrapper">
-        <label for="last_name" class="field-question">Last Name</label>
-        <input required type="text" id="last_name" name="last_name"> 
-      </div>
+        <div class="input-wrapper">
+          <label for="first_name" class="field-question">First Name</label>
+          <input required type="text" id="first_name" name="first_name"> 
+        </div>
+        <div class="input-wrapper">
+          <label for="last_name" class="field-question">Last Name</label>
+          <input required type="text" id="last_name" name="last_name"> 
+        </div>
       <div class="input-wrapper">
         <label for="address_1" class="field-question">Address Line 1</label>
         <input required type="text" id="address_1" name="address_1"> 
@@ -91,11 +93,11 @@
       </div>
       <div class="input-wrapper">
         <label for="state" class="field-question">State</label>
-        <input required type="text" id="state" name="state"> 
+        <input required type="text" id="state" name="state" maxlength="2"> 
       </div>
       <div class="input-wrapper">
         <label for="zip_code" class="field-question">Zip Code</label>
-        <input required type="text" id="zip_code" name="zip_code"> 
+        <input required type="text" id="zip_code" name="zip_code" maxlength="5"> 
       </div>
       <div class="input-wrapper">
         <p class="field-question">Would you like Men’s Boxer-Briefs or Women’s Briefs?</p>
