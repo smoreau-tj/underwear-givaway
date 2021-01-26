@@ -4,8 +4,83 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Underwear Giveaway</title>
+  <style>
+    .form{
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      max-width: 500px;
+      align-items: center;
+      margin: 0 auto;
+    }
+    .input-wrapper{
+      width: 100%;
+      justify-content: space-between;
+      align-items: center;
+      display: flex;
+      padding: 5px;
+    }
+  </style>
 </head>
-<body>
-  
-</body>
+  <body>
+    <form class="form">
+      <div class="input-wrapper">
+        <label>Email Address</label>
+        <input required name="email" id="email" type="email"> 
+      </div>
+      <div class="input-wrapper">
+        <label for="first_name">First Name</label>
+        <input required type="text" id="first_name" name="first_name"> 
+      </div>
+      <div class="input-wrapper">
+        <label for="last_name">Last Name</label>
+        <input required type="text" id="last_name" name="last_name"> 
+      </div>
+      <div class="input-wrapper">
+        <label for="address_1">Address Line 1</label>
+        <input required type="text" id="address_1" name="address_1"> 
+      </div>
+      <div class="input-wrapper">
+        <label for="address_2">Address Line 2</label>
+        <input required type="text" id="address_2" name="address_2"> 
+      </div>
+      <div class="input-wrapper">
+        <label for="city">City</label>
+        <input required type="text" id="city" name="city"> 
+      </div>
+      <div class="input-wrapper">
+        <label for="state">State</label>
+        <input required type="text" id="state" name="state"> 
+      </div>
+      <div class="input-wrapper">
+        <label for="zip_code">Zip Code</label>
+        <input required type="text" id="zip_code" name="zip_code"> 
+      </div>
+      <div class="input-wrapper">
+        <p>Would you like Men’s Boxer-Briefs or Women’s Briefs?</p>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Men's Boxer Briefs</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Women's Briefs</label>
+      </div>
+      <div class="input-wrapper">
+        <p>What is your waist size?</p>
+        <input type="radio" id="xs" name="size" value="xs">
+        <label for="xs">XS</label>
+        <input type="radio" id="s" name="size" value="s">
+        <label for="s">S</label>
+        <input type="radio" id="m" name="size" value="m">
+        <label for="m">M</label>
+        <input type="radio" id="l" name="size" value="l">
+        <label for="l">L</label>
+        <input type="radio" id="xl" name="size" value="xl">
+        <label for="xl">XL</label>
+        <input type="radio" id="xxl" name="size" value="xxl">
+        <label for="xxl">XXL</label>
+      </div>
+      <div class="form-submit">
+        <input type="submit" value="Submit">
+      </div>
+    </form>
+  </body>
 </html>
